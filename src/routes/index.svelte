@@ -56,7 +56,11 @@
 			n('Pacman Coringado', 'M'),
 			n('SCDM', 'M'),
 			n('bolo', 'M'),
-			n('torta', 'F')
+			n('torta', 'F'),
+			n('biruleibe', 'M'),
+			n('Mauricio de Sousa', 'M'),
+			n('Roberto Marinho', 'M'),
+			n('Moça do Jornal', 'F')
 		];
 		let objetos = [
 			n('toletinho', 'M'),
@@ -75,7 +79,13 @@
 			n('chupeta', 'F'),
 			n('chocolate', 'M'),
 			n('bolo', 'M'),
-			n('torta', 'F')
+			n('torta', 'F'),
+			n('wabuleibolaeubabaloueba', 'M'),
+			n('soco', 'M'),
+			n('cachaça', 'F'),
+			n('suquin', 'M'),
+			n('Freddy Fazbear', 'M'),
+			n('bostil', 'M')
 		];
 		let emojis = [
 			'😳',
@@ -121,7 +131,10 @@
 			a('sojado', 'sojada'),
 			a('bom', 'boa'),
 			a('ruim', 'ruim'),
-			a('cringe', 'cringe')
+			a('cringe', 'cringe'),
+			a('puto', 'puta'),
+			a('intankável', 'intankável'),
+			a('tankável', 'tankável')
 		];
 		let verbos = [
 			'atirar',
@@ -138,7 +151,15 @@
 			'beber',
 			'despedaçar',
 			'f0der',
-			'chorar'
+			'chorar',
+			'embebedar',
+			'drogar',
+			'abraçar',
+			'acariciar',
+			'sojar',
+			'morrer',
+			'emputecer',
+			'tankar'
 		];
 
 		let rand = Math.floor(Math.random() * personagens.length);
@@ -215,7 +236,18 @@
 			*Alguém bate na porta*
 			${personagem2.nome} : Entrega
 			${personagem1.nome} : Entrega de que?
-			${personagem2.nome} : Entrega de ${objeto1.nome} kkkk`
+			${personagem2.nome} : Entrega de ${objeto1.nome} kkkk`,
+
+			`${personagem1.nome} : toma essa, é pra ${verbo1} ${w(objeto1, 'o', 'a')} ${objeto1.nome}!
+			${personagem2.nome} : !!!!!!!!!!!`,
+
+			`${personagem1.nome} : ${w(personagem2, 'Senhor', 'Senhorita')} ${
+				personagem2.nome
+			}, o que vc sabe sobre ${w(objeto1, 'o', 'a')} ${objeto1.nome}?
+			${personagem2.nome} : Eu n sei de nada
+			${personagem1.nome} : e vc, ${personagem3.nome}?
+			${personagem3.nome} : ${objeto2.nome}?
+			${personagem1.nome} : oh yss`
 		];
 
 		const finais = [
@@ -230,7 +262,9 @@
 			`${personagem1.nome} : ${personagem2.nome}${w(personagem2, adjetivo2.m, adjetivo2.f)}`,
 			`${personagem1.nome} : Hora de ${verbo2}`,
 			`${personagem1.nome} : Nunca mais eu vou ${verbo2} ${objeto2.nome}`,
-			`${personagem1.nome} : *começa a ${verbo2} ${w(personagem2, 'o', 'a')} ${personagem2.nome}*`
+			`${personagem1.nome} : *começa a ${verbo2} ${w(personagem2, 'o', 'a')} ${personagem2.nome}*`,
+			`${personagem1.nome} mata ${personagem2.nome} no ato`,
+			`${personagem3.nome} e ${personagem1.nome} ${emoji1}`
 		];
 
 		return `${piadas[Math.floor(Math.random() * piadas.length)]}
