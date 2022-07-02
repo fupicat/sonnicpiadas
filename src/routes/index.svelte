@@ -134,7 +134,8 @@
 			a('cringe', 'cringe'),
 			a('puto', 'puta'),
 			a('intankável', 'intankável'),
-			a('tankável', 'tankável')
+			a('tankável', 'tankável'),
+			a('faminto', 'faminta')
 		];
 		let verbos = [
 			'atirar',
@@ -247,7 +248,11 @@
 			${personagem2.nome} : Eu n sei de nada
 			${personagem1.nome} : e vc, ${personagem3.nome}?
 			${personagem3.nome} : ${objeto2.nome}?
-			${personagem1.nome} : oh yss`
+			${personagem1.nome} : oh yss`,
+
+			`${personagem1.nome} : Ô ${personagem2.nome}, tô ${w(personagem1, adjetivo1.m, adjetivo1.f)}
+			${personagem2.nome} : vai ${verbo1} ;-;
+			${personagem1.nome} : Vo ${verbo1} vc`
 		];
 
 		const finais = [
@@ -264,7 +269,8 @@
 			`${personagem1.nome} : Nunca mais eu vou ${verbo2} ${objeto2.nome}`,
 			`${personagem1.nome} : *começa a ${verbo2} ${w(personagem2, 'o', 'a')} ${personagem2.nome}*`,
 			`${personagem1.nome} mata ${personagem2.nome} no ato`,
-			`${personagem3.nome} e ${personagem1.nome} ${emoji1}`
+			`${personagem3.nome} e ${personagem1.nome} ${emoji1}`,
+			`${personagem2.nome} : daquele jeito né 😏`
 		];
 
 		return `${piadas[Math.floor(Math.random() * piadas.length)]}
