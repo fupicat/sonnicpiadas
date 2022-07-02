@@ -102,10 +102,11 @@
 			'🥵',
 			'🔥',
 			'💪',
-			"'-'",
-			'¬¬',
+			"'-' ",
+			'¬¬ ',
 			'😭',
-			'😂'
+			'😂',
+			'>:| '
 		];
 		let adjetivos = [
 			a('safado', 'safada'),
@@ -135,7 +136,9 @@
 			'estrangular',
 			'tomar soro',
 			'beber',
-			'despedaçar'
+			'despedaçar',
+			'f0der',
+			'chorar'
 		];
 
 		let rand = Math.floor(Math.random() * personagens.length);
@@ -206,7 +209,13 @@
 			${personagem1.nome} : Voce queeeeer... ${w(objeto1, 'um', 'uma')} ${objeto1.nome}?`,
 
 			`${personagem1.nome} : ${personagem2.nome} ${emoji1}
-			${personagem2.nome} : para de ${verbo1} vc tá sendo ${w(personagem1, adjetivo1.m, adjetivo1.f)}`
+			${personagem2.nome} : para de ${verbo1} vc tá sendo ${w(personagem1, adjetivo1.m, adjetivo1.f)}`,
+
+			`${personagem1.nome} : Estou numa tranquilidade mto ${adjetivo1.f}
+			*Alguém bate na porta*
+			${personagem2.nome} : Entrega
+			${personagem1.nome} : Entrega de que?
+			${personagem2.nome} : Entrega de ${objeto1.nome} kkkk`
 		];
 
 		const finais = [
@@ -214,10 +223,14 @@
 			`${personagem1.nome} : NAOOOOOOOO!!`,
 			`${personagem1.nome} : mmmmmmm ${w(personagem2, adjetivo1.m, adjetivo2.f)}!`,
 			`${personagem3.nome} : ${emoji1}${emoji1} KKKKKKKKKKKKKK`,
+			`${personagem1.nome} : ${emoji1}`,
 			`*os dois começam a ${verbo1}*`,
 			`${personagem1.nome} : . . . ${emoji1}`,
 			`${personagem2.nome} : *começa a ${verbo1} e ${verbo2}*`,
-			`${personagem1.nome} : ${personagem2.nome}${w(personagem2, adjetivo2.m, adjetivo2.f)}`
+			`${personagem1.nome} : ${personagem2.nome}${w(personagem2, adjetivo2.m, adjetivo2.f)}`,
+			`${personagem1.nome} : Hora de ${verbo2}`,
+			`${personagem1.nome} : Nunca mais eu vou ${verbo2} ${objeto2.nome}`,
+			`${personagem1.nome} : *começa a ${verbo2} ${w(personagem2, 'o', 'a')} ${personagem2.nome}*`
 		];
 
 		return `${piadas[Math.floor(Math.random() * piadas.length)]}
