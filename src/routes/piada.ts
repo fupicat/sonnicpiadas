@@ -156,7 +156,9 @@ export async function get() {
 		'sojar',
 		'morrer',
 		'emputecer',
-		'tankar'
+		'tankar',
+                'mijar',
+                'cagar'
 	];
 
 	let rand = Math.floor(Math.random() * personagens.length);
